@@ -1,1 +1,10 @@
-<p> my birthday is {{birthday}}</p>
+<h1>常用管道介绍</h1>
+
+<p> my birthday is {{birthday | date | uppercase}}</p>
+<!--大小写管道 uppercase lowercase-->
+<p> my birthday is {{birthday | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+<!--格式化数字  2 代表两位整数  2-2 代表两位小数 1-4 最少要有一位小数，最多四位小数-->
+<p>圆周率是{{pi | number:'2.2-2'}}</p>
+<!-- 异步管道 -->
+<!--<p>圆周率是{{pi | async}}</p>-->
+<p>试试我自己写的管道{{size | multiple:'2'}}</p>
